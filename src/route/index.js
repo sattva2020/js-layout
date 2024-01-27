@@ -4,10 +4,12 @@ const router = express.Router()
 
 // Підключіть файли роутів
 const test = require('./test')
+const layout = require('./layout')
 // Підключіть інші файли роутів, якщо є
 
 // Об'єднайте файли роутів за потреби
 router.use('/', test)
+router.use('/layout', layout)
 // Використовуйте інші файли роутів, якщо є
 
 // Експортуємо глобальний роутер
